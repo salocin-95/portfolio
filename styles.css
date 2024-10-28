@@ -2,11 +2,10 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 1px solid greenyellow;
-}
-
-body {
-    margin: 0;    
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: 1px solid green;
 }
 
 .wrapper {
@@ -14,87 +13,13 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-
-.nav-bar {
-    background-color: aqua;
-    width: 100%;
-    position: fixed;
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
-.hero-section {
-    background-color: green;
+.header {
     width: 100%;
-    min-height: 50vh;
-    padding-top: 2rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-
-.nav-buttons  {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.info-grid {
-    display: grid;
-    background-color: aliceblue;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-block: 2rem;
-    gap: 2rem;
-}
-
-.work-experience-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.reviews {
-    background-color: rgb(40, 102, 156);
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
-
-.reviews-grid {
-    display: grid;
-    gap: 2rem;
-    padding: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding-block: 2rem;
-    color: white;
-}
-
-.reviews-grid-element {
-    background-color: blue;
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-footer {
-    background-color: violet;
-    text-align: center;
-    padding: 1rem;
-}
-
-@media (max-width: 600px) {
-    .reviews {
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .info-grid {
-        max-width: 400px;
-        padding-left: 0;
-        padding-right: 0;
-      }
- }
